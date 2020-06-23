@@ -83,7 +83,7 @@ void UProceduralGaitControllerComponent::BeginPlay()
 	}
 
 	{
-		SetComponentTickEnabled(AnimInstanceRef);
+		SetComponentTickEnabled(!AnimInstanceRef); // In visual studio I get an error of conversion to bool I added --> " ! " 
 	}
 }
 
